@@ -1,42 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Calcule seu custo com combustível" />
-    <meta name="keywords" content="Fuel, Cost, Combustível, Custo" />
-    <meta name="author" content="Jean Vidal" />
-    <title>Calcule Seu Custo Com Combustível</title>
-    <link rel="stylesheet" href="style.css" />
-    <script async src="./main.js"></script>
-  </head>
-  <body>
-    <form action="#" onsubmit="return calculateCost(this);">
-      <label for="kmday">Km/Dia:</label>
-      <input type="number" id="kmday" name="kmday" /><br /><br />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Calcule seu custo com combustível" />
+        <meta name="keywords" content="Fuel, Cost, Combustível, Custo" />
+        <meta name="author" content="Jean Vidal" />
+        <title>Calcule Seu Custo Com Combustível</title>
+        <link rel="stylesheet" href="style.css" />
+        <script async src="./main.js"></script>
+    </head>
+    <body>
+        <header></header>
+        <main>
+            <form class="form-inline" action="#" onsubmit="return calculateCost(this);">
+                <label for="kmday">Km/Dia:</label>
+                <input
+                    type="number"
+                    id="kmday"
+                    name="kmday"
+                    placeholder="Digite o Km"
+                /><br /><br />
 
-      <label for="kml">Km/L:</label>
-      <input type="number" id="kml" name="kml" /><br /><br />
+                <label for="kml">Km/L:</label>
+                <input
+                    type="number"
+                    id="kml"
+                    name="kml"
+                    placeholder="Digite a autonomia"
+                /><br /><br />
 
-      <label for="fuelcost">Valor Combustível:</label>
-      <input type="number" id="fuelcost" name="fuelcost" /><br /><br />
+                <label for="fuelcost">Valor Combustível:</label>
+                <input
+                    type="number"
+                    id="fuelcost"
+                    name="fuelcost"
+                    placeholder="Digite o preço"
+                /><br /><br />
 
-      <label for="dayrun">Dias Rodados:</label>
-      <input type="number" id="dayrun" name="dayrun" /><br /><br />
+                <label for="dayrun">Dias Rodados Por Semana:</label>
+                <input
+                    type="number"
+                    id="dayrun"
+                    name="dayrun"
+                    placeholder="Digite dias rodados"
+                /><br /><br />
 
-      <label for="kmmonth">Km/Mês:</label>
-      <input type="number" id="kmmonth" name="kmmonth" disabled /><br /><br />
+                <label for="kmmonth">Km/Mês:</label>
+                <input type="number" id="kmmonth" name="kmmonth" disabled /><br /><br />
 
-      <label for="kmyear">Km/Ano:</label>
-      <input type="number" id="kmyear" name="kmyear" disabled /><br /><br />
+                <label for="kmyear">Km/Ano:</label>
+                <input type="number" id="kmyear" name="kmyear" disabled /><br /><br />
 
-      <label for="costmonth">Custo/Mês:</label>
-      <input type="number" id="costmonth" name="costmonth" disabled /><br /><br />
+                <label for="costmonth">Custo/Mês:</label>
+                <input type="number" id="costmonth" name="costmonth" disabled /><br /><br />
 
-      <label for="costyear">Custo/Ano:</label>
-      <input type="number" id="costyear" name="costyear" disabled /><br /><br />
+                <label for="costyear">Custo/Ano:</label>
+                <input type="number" id="costyear" name="costyear" disabled /><br /><br />
 
-      <input type="submit" value="Submit" />
-    </form>
-  </body>
+                <input type="submit" value="Submit" />
+            </form>
+            <br /><br /><br /><br />
+            <span>
+                <p>O preço do combustível é composto da seguinte forma:</p>
+                <p>Gasolina:</p>
+                <b>33,3%</b> - Petrobras;<br />
+                <b>27,8%</b> - ICMS (importante ressaltar que o ICMS é um percentual atrelado ao
+                preço do combustível. Portanto, se este estiver mais barato, menor será o valor pago
+                no ICMS);<br />
+                <b>16,3%</b> - Etanol, que é adicionado à gasolina;<br />
+                <b>11,0%</b> - Distribuição e revenda;<br />
+                <b>11,6%</b> - Tributos federais CIDE e PIS.<br /><br />
+
+                <p>Diesel:</p>
+                <b>52,1%</b> - Petrobras;<br />
+                <b>16,0%</b> - ICMS (importante ressaltar que o ICMS é um percentual atrelado ao
+                preço do combustível. Portanto, se este estiver mais barato, menor será o valor pago
+                no ICMS);<br />
+                <b>14,0%</b> - Biodisel, que é misturado ao combustível;<br />
+                <b>11,0%</b> - Distribuição e revenda;<br />
+                <b>6,9%</b> - Tributos federais CIDE, PIS, Pasep e Cofins. </span
+            ><br /><br />
+            <b>Informações obtidas no site oficial da Petrobras.</b> <br />
+            <i
+                >Obs.: Os percentuais sofrem ajustes constantes e podem não refletir o valor exato
+                atual.</i
+            >
+        </main>
+        <footer></footer>
+    </body>
 </html>
