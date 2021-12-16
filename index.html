@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Calcule seu custo com combustível" />
+    <meta name="keywords" content="Fuel, Cost, Combustível, Custo" />
+    <meta name="author" content="Jean Vidal" />
+    <title>Calcule Seu Custo Com Combustível</title>
+    <link rel="stylesheet" href="style.css" />
+    <script async src="./main.js"></script>
+  </head>
+  <body>
+    <form action="#" onsubmit="return calculateCost(this);">
+      <label for="kmday">Km/Dia:</label>
+      <input type="number" id="kmday" name="kmday" /><br /><br />
+
+      <label for="kml">Km/L:</label>
+      <input type="number" id="kml" name="kml" /><br /><br />
+
+      <label for="fuelcost">Valor Combustível:</label>
+      <input type="number" id="fuelcost" name="fuelcost" /><br /><br />
+
+      <label for="dayrun">Dias Rodados:</label>
+      <input type="number" id="dayrun" name="dayrun" /><br /><br />
+
+      <label for="kmmonth">Km/Mês:</label>
+      <input type="number" id="kmmonth" name="kmmonth" disabled /><br /><br />
+
+      <label for="kmyear">Km/Ano:</label>
+      <input type="number" id="kmyear" name="kmyear" disabled /><br /><br />
+
+      <label for="costmonth">Custo/Mês:</label>
+      <input type="number" id="costmonth" name="costmonth" disabled /><br /><br />
+
+      <label for="costyear">Custo/Ano:</label>
+      <input type="number" id="costyear" name="costyear" disabled /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
